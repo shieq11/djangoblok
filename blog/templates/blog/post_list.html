@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Blog dla programistów</title>
@@ -11,13 +11,18 @@
     <h3>Autor: Mateusz</h3>
     <h4>Wszelkie prawa zastrzeżone</h4>
 </div>
+    {% comment %}
+    <p> hdbiudabfiaubfia</p>
+    {% endcomment %}
+    {% for post in posts %}
 <div>
-   {{ posts }}
+    <p>opublikowany: {{ post.published_date }}</p>
+    <><a href="">{{ post.title }}</a></h2>
+    <em>{{ postt.text|linebreakbr }}</em>
 </div>
+</div>
+{% endfor %}
 <div>
-<ul>
 
-</div>
-</ul>
 </body>
 </html>
